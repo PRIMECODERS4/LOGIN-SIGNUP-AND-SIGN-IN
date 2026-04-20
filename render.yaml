@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: portfolio
+    env: node
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: JWT_SECRET
+        value: portfolio-secret-key-2024-secure
+      - key: PORT
+        value: 3000
